@@ -9,9 +9,7 @@ const cx = classNames.bind(styles);
 function Header() {
     return <header className={cx('wrapper')}>
         <div className={cx('inner')}>
-            <div className={cx('logo')}>
-                <img src={images.logo} alt='Tiktok' />
-            </div>
+            <img src={images.logo} alt='Tiktok' />
             <div className={cx('search')}>
                 <input placeholder='Search accounts and videos' />
                 <button className={cx('clear')}>

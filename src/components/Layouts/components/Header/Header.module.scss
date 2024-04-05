@@ -19,11 +19,12 @@
     justify-content: space-between;
 }
 
-.logo {}
+.search, .search-result {
+    width: 361px;
+}
 
 .search {
     position: relative;
-    width: 361px;
     height: var(--searh-height);
     padding-left: 16px;
     display: flex;
@@ -57,6 +58,13 @@
     &:focus-within {
         border-color: rgba(22, 24, 35, 0.2);
     }
+}
+
+.search-title {
+    padding: 5px 12px;
+    color: rgba(22, 24, 35, 0.5);
+    font-size: 1.4rem;
+    width: 600px;
 }
 
 .clear, .loading {

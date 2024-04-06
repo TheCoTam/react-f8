@@ -16,6 +16,21 @@ const MENU_ICON = [
     {
         icon: <FontAwesomeIcon icon={faEarthAsia} />,
         title: 'Tiếng Việt',
+        children: {
+            title: 'Language',
+            data: [
+                {
+                    type: 'language',
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    type: 'language',
+                    code: 'vi',
+                    title: 'Tiếng Việt',
+                },
+            ]
+        }
     },
     {
         icon: <FontAwesomeIcon icon={faCircleQuestion} />,
@@ -31,6 +46,15 @@ const MENU_ICON = [
 function Header() {
 
     const [searchResult, setSearchResult] = useState([]);
+
+    const handleMenuChange = (menuItem) => {
+        switch(menuItem.type) {
+            case 'language':
+                // Handle change language
+                break;
+            default:
+        }
+    }
 
     useEffect(() => {
         setTimeout(() => {
@@ -76,6 +100,7 @@ function Header() {
 
                 <Menu
                     items={MENU_ICON}
+                    onChange={handleMenuChange}
                 >
                     <button className={cx('more-btn')}>
                         <FontAwesomeIcon icon={faEllipsisVertical} />

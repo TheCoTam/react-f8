@@ -7,13 +7,13 @@
     border-radius: 4px;
     font-size: 1.6rem;
     font-weight: 700;
-    font-family: "TikTokFont", sans-serif;
+    font-family: var(--font-family);
     cursor: pointer;
     background-color: var(--white);
     border: 1px solid transparent;
     user-select: none;
 
-    + .wrapper {
+    +.wrapper {
         margin-left: 8px;
     }
 
@@ -39,7 +39,7 @@
     color: var(--white);
     background-color: var(--primary);
     border-color: var(--primary);
-    
+
     &:hover {
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #fe2c55;
         border-color: var(--primary);
@@ -62,7 +62,8 @@
     }
 }
 
-.icon + .title, .title + .icon {
+.icon+.title,
+.title+.icon {
     margin-left: 8px;
 }
 

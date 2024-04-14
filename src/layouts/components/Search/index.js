@@ -1,6 +1,6 @@
 import classNames from 'classnames/bind';
 import HeadlessTippy from '@tippyjs/react/headless';
-import 'tippy.js/dist/tippy.css'
+import 'tippy.js/dist/tippy.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState, useRef } from 'react';
@@ -10,7 +10,7 @@ import { Wrapper as PopperWrapper } from '~/components/Popper';
 import AccountItem from '~/components/AccountItem';
 import { SearchIcon } from '~/components/Icons';
 import { useDebounced } from '~/hooks';
-import * as searchServices from '~/apiServices/searchServices'
+import * as searchServices from '~/services/searchService';
 
 const cx = classNames.bind(styles);
 

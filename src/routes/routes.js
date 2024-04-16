@@ -1,3 +1,5 @@
+import config from '~/config';
+
 // Layouts
 import { HeaderOnly } from '~/layouts';
 
@@ -7,7 +9,7 @@ import Following from '~/Pages/Following';
 import Profile from '~/Pages/Profile';
 import Upload from '~/Pages/Upload';
 import Search from '~/Pages/Search';
-import config from '~/config';
+import Live from '~/Pages/Live';
 
 // Public routes
 const publicRoutes = [
@@ -16,6 +18,7 @@ const publicRoutes = [
     { path: config.routes.nickname, component: Profile },
     { path: config.routes.upload, component: Upload, layout: HeaderOnly },
     { path: config.routes.search, component: Search, layout: null },
+    { path: config.routes.live, component: Live},
 ]
 
 // Private routes
